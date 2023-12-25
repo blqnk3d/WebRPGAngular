@@ -10,7 +10,7 @@ import {PlayerEmitService} from "../player-emit.service";
 
 export class Player_IconComponent implements OnInit{
 
-  name = "PlaceholderName"
+  name = "blqnk3d"
 
   constructor(private playerService:PlayerEmitService) {
   }

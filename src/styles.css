@@ -7,10 +7,21 @@ html,body,div{
   position: inherit;
   background-color: #2f2f2f;
   color: white;
+
+
+  font-family: "Arial Black", serif;
+  font-size: 1rem;
 }
 
 input{
   background-color: #212121;
   color: white;
+
+  font-family: "Arial Black", serif;
+  font-size: 1rem;
+}
+button{
+  font-family: "Arial Black", serif;
+  font-size: 1rem;
 }
 

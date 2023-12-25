@@ -6,4 +6,6 @@ div{
 }
 p{
   margin: 0;
+  border: #262626 solid 2px ;
+  border-radius: 25px;
 }

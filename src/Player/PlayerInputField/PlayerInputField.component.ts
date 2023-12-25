@@ -17,6 +17,11 @@ export class PlayerInputFieldComponent {
 
 
   sendIt(){
+    if (this.name.length == 0) {
+      alert("Empty \nPlease enter a valid name")
+      return
+    }
+
     this.playerService.emitPlayer(new Player(this.name))
     this.sumitted = false
   }
