@@ -13,6 +13,7 @@ import { MainFieldComponent } from '../main-field/main-field.component';
 import { FightComponent } from '../fightGroup/fight/fight.component';
 import { FightChooseComponent } from '../fightGroup/fight-choose/fight-choose.component';
 
+
 @NgModule({
   declarations: [
     AppComponent,

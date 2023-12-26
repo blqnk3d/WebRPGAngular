@@ -9,9 +9,7 @@ export class ButtonService {
   BUTTONS   = [
      "Standart",
      "Fight",
-     "Comming Soon",
-     "Comming Soon",
-    "Comming Soon",
+     "Map",
   ]
 
   buttonevenLisener: EventEmitter<number> = new EventEmitter<number>()
@@ -19,12 +17,9 @@ export class ButtonService {
   constructor() {
   }
 
-
   emitState(numb: number) {
     this.temp = numb
     this.buttonevenLisener.emit(numb)
   }
-
-
 
 }

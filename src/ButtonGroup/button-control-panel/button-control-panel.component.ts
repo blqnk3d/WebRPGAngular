@@ -8,6 +8,7 @@ import {ButtonService} from "../button/button.service";
 })
 export class ButtonControlPanelComponent {
 
-
+constructor(public buttonService : ButtonService) {
+}
 
 }

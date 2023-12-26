@@ -1,4 +1,6 @@
 import { Component } from '@angular/core';
+import {FightService} from "../fight.service";
+import {Enemy} from "../../enemy";
 
 @Component({
   selector: 'app-fight',
@@ -6,5 +8,5 @@ import { Component } from '@angular/core';
   styleUrls: ['./fight.component.css']
 })
 export class FightComponent {
-
+    protected readonly Enemy = Enemy;
 }
