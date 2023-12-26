@@ -22,3 +22,7 @@ app-button-control-panel{
   justify-content: space-around;
   height: 100%;
 }
+
+app-Player-Input-Field{
+  height: fit-content;
+}

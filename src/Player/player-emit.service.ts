@@ -14,7 +14,5 @@ export class PlayerEmitService {
   emitPlayer(player:Player){
     this.playerEmitter.emit(player)
   }
-  getPlayer(){
-    return this.Player
-  }
+
 }

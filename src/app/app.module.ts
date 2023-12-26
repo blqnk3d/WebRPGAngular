@@ -8,7 +8,10 @@ import {PlayerInputFieldComponent} from "../Player/PlayerInputField/PlayerInputF
 import {InputFieldComponent} from "../InputField/InputField.component";
 import { ButtonComponent } from '../ButtonGroup/button/button.component';
 import { ButtonControlPanelComponent } from '../ButtonGroup/button-control-panel/button-control-panel.component';
-import { DisplayPlayerNamePipe } from '../display-player-name.pipe';
+import { DisplayPlayerNamePipe } from '../Player/display-player-name.pipe';
+import { MainFieldComponent } from '../main-field/main-field.component';
+import { FightComponent } from '../fightGroup/fight/fight.component';
+import { FightChooseComponent } from '../fightGroup/fight-choose/fight-choose.component';
 
 @NgModule({
   declarations: [
@@ -18,7 +21,10 @@ import { DisplayPlayerNamePipe } from '../display-player-name.pipe';
     InputFieldComponent,
     ButtonComponent,
     ButtonControlPanelComponent,
-    DisplayPlayerNamePipe
+    DisplayPlayerNamePipe,
+    MainFieldComponent,
+    FightComponent,
+    FightChooseComponent
   ],
   imports: [
     BrowserModule,
