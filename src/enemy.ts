@@ -17,11 +17,13 @@ export class Enemy extends Entity{
 
     expGiven = -1
     coinsGiven = -1
+    img = ""
 
-  constructor(name : string,health : number,damage : number,defence : number,expGive = 0 ,coinsGiven = 0 ) {
+  constructor(name : string,health : number,damage : number,defence : number,expGive = 0 ,coinsGiven = 0 ,img = "") {
     super(name,health,damage,defence);
     this.expGiven = expGive
     this.coinsGiven = coinsGiven
+    this.img = img
   }
 }
 

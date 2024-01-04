@@ -17,8 +17,15 @@ export class PlayerInputFieldComponent {
 
 
   sendIt(){
+    if (this.name.length == 0 ) return
     this.playerService.emitPlayer(new Player(this.name))
     this.sumitted = false
   }
 
+  getSubmitted(){
+    return this.sumitted
+  }
+
 }
+
+
