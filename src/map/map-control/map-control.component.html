@@ -1,0 +1,10 @@
+
+<div>
+  <select [(ngModel)]="currentState">
+    <option *ngFor="let item of Object.keys(Enemy.newEnemys)" [value]="item">{{item}}</option>
+  </select>
+
+<ng-container *ngFor="let item of Object.keys(Enemy.newEnemys) ">
+  <app-map-area [area]="item" *ngIf="currentState == item"></app-map-area>
+</ng-container>
+</div>
