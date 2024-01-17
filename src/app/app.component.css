@@ -14,7 +14,7 @@
 .div6 { grid-area: 1 / 26 / 2 / 33; }
 .div7 { grid-area: 2 / 29 / 6 / 33; }
 .div8 { grid-area: 6 / 29 / 9 / 33; }
-.div9 { grid-area: 2 / 4 / 9 / 29; }
+.div9 { grid-area: 2 / 4 / 9 / 29;}
 
 
 app-button-control-panel{
@@ -25,4 +25,10 @@ app-button-control-panel{
 
 app-Player-Input-Field{
   height: fit-content;
+  align-items: center;
+}
+
+.flexRow{
+  display: flex;
+  flex-direction: column;
 }

@@ -1,5 +1,5 @@
 
 <div *ngIf="sumitted">
-  <input type="text" [(ngModel)]="name" placeholder="Input Name here">
-  <button (click)="sendIt()">confirm</button>
+  <input type="text" [(ngModel)]="name"  (keyup.enter)="sendIt()" placeholder="Input Name here">
+  <button (click)="sendIt()"  >confirm</button>
 </div>

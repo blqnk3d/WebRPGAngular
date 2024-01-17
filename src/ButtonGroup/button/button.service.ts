@@ -10,6 +10,7 @@ export class ButtonService {
      "Standart",
      "Fight",
      "Map",
+
   ]
 
   buttonevenLisener: EventEmitter<number> = new EventEmitter<number>()

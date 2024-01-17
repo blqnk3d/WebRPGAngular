@@ -7,13 +7,13 @@ import {Player} from "./player";
 export class PlayerEmitService {
   playerEmitter: EventEmitter<Player> = new EventEmitter();
 
-  player : Player = new Player("")
+  player : Player = new Player("test2")
 
   constructor() { }
 
   emitPlayer(player:Player){
     this.player = player
-    console.log(this.player)
+    console.log(player)
     this.playerEmitter.emit(player)
   }
 

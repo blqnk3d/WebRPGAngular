@@ -1,6 +1,12 @@
 <div class="parent">
   <div class="div1"> <app-player-icon></app-player-icon> </div>
-  <div class="div2"> 2</div>
+  <div class="div2">
+    <p>LVL: {{playerservice.player.lvl}}</p>
+    <p>Health: {{playerservice.player.gethealth()}}</p>
+    <p>Current Exp: {{playerservice.player.exp}} / {{playerservice.player.expCap}}</p>
+    <p>Damage: {{playerservice.player.damage}}</p>
+    <p>Defence: {{playerservice.player.defence}}</p>
+  </div>
   <div class="div3"> 3</div>
   <div class="div4"> <app-button-control-panel></app-button-control-panel></div>
   <div class="div5"> 5</div>
@@ -8,9 +14,10 @@
   <div class="div7"> 7</div>
   <div class="div8"> </div>
   <div class="div9">
+    <div class="flexRow">
     <app-Player-Input-Field></app-Player-Input-Field>
     <app-main-field></app-main-field>
 
-
+    </div>
   </div>
 </div>

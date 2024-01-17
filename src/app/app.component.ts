@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import {ButtonService} from "../ButtonGroup/button/button.service";
+import {PlayerEmitService} from "../Player/player-emit.service";
 
 @Component({
   selector: 'app-root',
@@ -7,10 +8,9 @@ import {ButtonService} from "../ButtonGroup/button/button.service";
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'WebRPG';
   test = false
 
-  constructor(public buttonService: ButtonService) {
+  constructor(public playerservice :PlayerEmitService) {
   }
 
   change(){

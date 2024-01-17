@@ -12,6 +12,8 @@ import { DisplayPlayerNamePipe } from '../Player/display-player-name.pipe';
 import { MainFieldComponent } from '../main-field/main-field.component';
 import { FightComponent } from '../fightGroup/fight/fight.component';
 import { FightChooseComponent } from '../fightGroup/fight-choose/fight-choose.component';
+import { MapControlComponent } from '../map/map-control/map-control.component';
+import { MapAreaComponent } from '../map/map-area/map-area.component';
 
 
 @NgModule({
@@ -25,7 +27,9 @@ import { FightChooseComponent } from '../fightGroup/fight-choose/fight-choose.co
     DisplayPlayerNamePipe,
     MainFieldComponent,
     FightComponent,
-    FightChooseComponent
+    FightChooseComponent,
+    MapControlComponent,
+    MapAreaComponent
   ],
   imports: [
     BrowserModule,

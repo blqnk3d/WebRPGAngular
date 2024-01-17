@@ -1,4 +1,4 @@
-import {Injectable, OnInit} from '@angular/core';
+import {Injectable, OnDestroy, OnInit} from '@angular/core';
 import {Player} from "../Player/player";
 import {PlayerEmitService} from "../Player/player-emit.service";
 import {Enemy} from "../enemy";
@@ -6,10 +6,10 @@ import {Enemy} from "../enemy";
 @Injectable({
   providedIn: 'root'
 })
-export class FightService implements OnInit {
+export class FightService implements OnInit, OnDestroy {
 
 
-  player: Player = new Player("")
+  player: Player = new Player("test")
 
   constructor(private playerService: PlayerEmitService) {
   }
@@ -38,6 +38,17 @@ export class FightService implements OnInit {
     }
 
     enemy.reset()
-    this.player.gethealth() > 0 ? this.playerService.emitPlayer(this.player) : alert("Player Died")
+    if(this.player.gethealth() > 0){
+      this.playerService.emitPlayer(this.player)
+      console.log("fight Won")
+    }else {
+      alert("Player Died")
+    }
+  }
+
+
+  ngOnDestroy(): void {
+
+    this.playerService.playerEmitter.unsubscribe()
   }
 }

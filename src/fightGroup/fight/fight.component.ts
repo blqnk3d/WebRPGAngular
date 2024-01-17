@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import {Component, Input} from '@angular/core';
 import {FightService} from "../fight.service";
 import {Enemy} from "../../enemy";
 
@@ -8,5 +8,7 @@ import {Enemy} from "../../enemy";
   styleUrls: ['./fight.component.css']
 })
 export class FightComponent {
+  @Input()enemyList = []
+
     protected readonly Enemy = Enemy;
 }
